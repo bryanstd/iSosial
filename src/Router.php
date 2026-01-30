@@ -8,7 +8,11 @@ class Router
 
     private function addRoute($route, $controller, $action, $method)
     {
-
+        $route = rtrim($route, '/');
+        if ($route === '') {
+            $route = '/';
+        }
+        
         $this->routes[$method][$route] = ['controller' => $controller, 'action' => $action];
     }
 
@@ -25,9 +29,14 @@ class Router
     public function dispatch()
     {
         $uri = strtok($_SERVER['REQUEST_URI'], '?');
-        $method =  $_SERVER['REQUEST_METHOD'];
+        $method = $_SERVER['REQUEST_METHOD'];
 
-        if (array_key_exists($uri, $this->routes[$method])) {
+        $uri = rtrim($uri, '/');
+        if ($uri === '') {
+            $uri = '/';
+        }
+
+        if (isset($this->routes[$method][$uri])) {
             $controller = $this->routes[$method][$uri]['controller'];
             $action = $this->routes[$method][$uri]['action'];
 
