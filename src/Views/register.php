@@ -19,18 +19,28 @@
     </div>
 
     <div class="auth-card">
-      <h2>Login ke iSosial</h2>
-      <p class="subtitle">Masukkan kredensial Anda untuk mengakses dashboard</p>
+      <h2>Daftar ke iSosial</h2>
+      <p class="subtitle">Ayo bergabung dengan iSosial sebagai relawan.</p>
       
       <form id="loginForm">
         <div class="input-group">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" placeholder="Masukan nama lengkap" required>
+        </div>
+
+        <div class="input-group">
+          <label for="phonenum">Phone Number</label>
+          <input type="text" id="phonenum" placeholder="Masukan nomor telepon" required>
+        </div>
+
+        <div class="input-group">
           <label for="username">Email</label>
-          <input type="text" id="username" placeholder="Contoh: bryan@gmail.com" required>
+          <input type="text" id="username" placeholder="Masukan username" required>
         </div>
         
         <div class="input-group">
           <label for="password">Password</label>
-          <input type="password" id="password" placeholder="Masukkan password" required>
+          <input type="password" id="password" placeholder="Masukan password" required>
         </div>
         
         <button type="submit" class="login-btn">Masuk</button>
@@ -40,7 +50,7 @@
         </div>
       
         <p class="register-link">
-          Belum punya akun? <a href="/register">Daftar Sekarang</a>
+          Sudah punya akun? <a href="/login">Login Sekarang</a>
         </p>
       </form>
     </div>
