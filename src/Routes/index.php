@@ -2,6 +2,7 @@
 
 use App\Controllers\HomeController;
 use App\Controllers\AuthController;
+use App\Controllers\DashboardController;
 use App\Router;
 
 $router = new Router();

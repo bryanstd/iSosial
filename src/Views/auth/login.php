@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Login | iSosial</title>
-  <link rel="stylesheet" href="css/authentication.css">
+  <link rel="stylesheet" href="/css/authentication.css">
 </head>
 <body class="auth-bg">
 
   <div class="auth-container">
     <div class="auth-left">
       <div class="image-wrapper">
-        <img src="./images/login-img.png" alt="Relawan Sosial" class="login-image">
+        <img src="/images/login-img.png" alt="Relawan Sosial" class="login-image">
         <div class="image-overlay">
           <h1>iSosial</h1>
           <p class="tagline">Sistem Manajemen Relawan Sekolah</p>
