@@ -19,28 +19,20 @@
     </div>
 
     <div class="auth-card">
-      <h2>Daftar ke iSosial</h2>
-      <p class="subtitle">Ayo bergabung dengan iSosial sebagai relawan.</p>
-      
-      <form id="loginForm">
+      <h2>Login ke iSosial</h2>
+      <p class="subtitle">Masukkan kredensial Anda untuk mengakses dashboard</p>
+      <?php if (!empty($error)): ?>
+        <p style="color: red; text-align:center;"><?= $error ?> </p>
+      <?php endif; ?>
+      <form id="loginForm" method="POST" action="/login">
         <div class="input-group">
-          <label for="fullname">Full Name</label>
-          <input type="text" id="fullname" placeholder="Masukan nama lengkap" required>
-        </div>
-
-        <div class="input-group">
-          <label for="phonenum">Phone Number</label>
-          <input type="text" id="phonenum" placeholder="Masukan nomor telepon" required>
-        </div>
-
-        <div class="input-group">
-          <label for="username">Email</label>
-          <input type="text" id="username" placeholder="Masukan username" required>
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="Contoh: bryan@gmail.com" required>
         </div>
         
         <div class="input-group">
           <label for="password">Password</label>
-          <input type="password" id="password" placeholder="Masukan password" required>
+          <input type="password" id="password" name="password" placeholder="Masukkan password" required>
         </div>
         
         <button type="submit" class="login-btn">Masuk</button>
@@ -50,7 +42,7 @@
         </div>
       
         <p class="register-link">
-          Sudah punya akun? <a href="/login">Login Sekarang</a>
+          Belum punya akun? <a href="/register">Daftar Sekarang</a>
         </p>
       </form>
     </div>

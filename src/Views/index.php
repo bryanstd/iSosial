@@ -4,10 +4,6 @@
     <title>iSosial</title>
 </head>
 <body>
-    <ul>
-        <?php foreach($kegiatan as $arsip) : ?>
-            <li><?= $arsip->kegiatanapa ?> (<?= $arsip->tanggal ?>)</li>
-        <?php endforeach; ?>
-    </ul>
+    <h1>isosial</h1>
 </body>
 </html>
