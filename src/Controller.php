@@ -10,4 +10,9 @@ class Controller
 
         include "Views/$view.php";
     }
+
+    public function redirect($path)
+    {
+        header("Location: $path");
+    }
 }
