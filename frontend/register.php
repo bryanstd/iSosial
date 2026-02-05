@@ -24,12 +24,12 @@
       
       <form method="POST" action="/register">
         <div class="input-group">
-          <label for="fullname">Nama Lengkap</label>
+          <label for="fullname">Full Name</label>
           <input type="text" id="fullname" name="fullname" placeholder="Masukan nama lengkap" required>
         </div>
 
         <div class="input-group">
-          <label for="phonenum">Nomor Telepon</label>
+          <label for="phonenum">Phone Number</label>
           <input type="text" id="phonenum" name="phonenum" placeholder="Masukan nomor telepon" required>
         </div>
 
