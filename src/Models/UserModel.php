@@ -28,6 +28,32 @@ class UserModel {
     }
 
     public function register($fullname, $phonenum, $email, $password, $role) {
+        $checkEmailSql = "SELECT id FROM isosial_users WHERE email = ?";
+        $checkStmt = $this->db->prepare($checkEmailSql);
+        $checkStmt->bind_param("s", $email);
+        $checkStmt->execute();
+        $checkResult = $checkStmt->get_result();
+        
+        if ($checkResult->num_rows > 0) {
+            return [
+                'success' => false,
+                'error' => 'Email sudah terdaftar'
+            ];
+        }
+
+        $checkPhoneSql = "SELECT id FROM isosial_users WHERE phone_number = ?";
+        $checkPhoneStmt = $this->db->prepare($checkPhoneSql);
+        $checkPhoneStmt->bind_param("s", $phonenum);
+        $checkPhoneStmt->execute();
+        $checkPhoneResult = $checkPhoneStmt->get_result();
+        
+        if ($checkPhoneResult->num_rows > 0) {
+            return [
+                'success' => false,
+                'error' => 'Nomor telepon sudah terdaftar'
+            ];
+        }
+        
         $sql = "INSERT INTO isosial_users (full_name, phone_number, email, password, role) VALUES (?, ?, ?, ?, ?)";
         $stmt = $this->db->prepare($sql);
         $stmt->bind_param("sssss", 
@@ -38,6 +64,17 @@ class UserModel {
             $role
         );
         
-        return $stmt->execute();
+        if ($stmt->execute()) {
+            return [
+                'success' => true,
+                'message' => 'Registrasi berhasil',
+                'user_id' => $stmt->insert_id
+            ];
+        } else {
+            return [
+                'success' => false,
+                'error' => 'Registrasi gagal: ' . $this->db->error
+            ];
+        }
     }
 }

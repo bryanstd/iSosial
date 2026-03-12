@@ -21,7 +21,9 @@
     <div class="auth-card">
       <h2>Daftar ke iSosial</h2>
       <p class="subtitle">Ayo bergabung dengan iSosial sebagai relawan.</p>
-      
+      <?php if (!empty($error)): ?>
+        <p style="color: red; text-align:center;"><?= $error ?> </p>
+      <?php endif; ?>
       <form method="POST" action="/register">
         <div class="input-group">
           <label for="fullname">Nama Lengkap</label>
