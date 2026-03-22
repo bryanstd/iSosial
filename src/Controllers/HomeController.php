@@ -10,4 +10,9 @@ class HomeController extends Controller
     {
         $this->render('index');
     }
+
+    public function aboutme()
+    {
+        $this->render('aboutme');
+    }
 }

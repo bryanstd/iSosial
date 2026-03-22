@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Login | iSosial</title>
   <link rel="stylesheet" href="/css/authentication.css">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body class="auth-bg">
 
@@ -21,9 +22,15 @@
     <div class="auth-card">
       <h2>Login ke iSosial</h2>
       <p class="subtitle">Masukkan kredensial Anda untuk mengakses dashboard</p>
+      
       <?php if (!empty($error)): ?>
-        <p style="color: red; text-align:center;"><?= $error ?> </p>
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            swal("Error", "<?php echo addslashes($error); ?>", "error");
+          });
+        </script>
       <?php endif; ?>
+      
       <form id="loginForm" method="POST" action="/login">
         <div class="input-group">
           <label for="email">Email</label>

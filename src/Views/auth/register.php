@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Register | iSosial</title>
   <link rel="stylesheet" href="/css/authentication.css">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body class="auth-bg">
 
@@ -22,8 +23,12 @@
       <h2>Daftar ke iSosial</h2>
       <p class="subtitle">Ayo bergabung dengan iSosial sebagai relawan.</p>
       <?php if (!empty($error)): ?>
-        <p style="color: red; text-align:center;"><?= $error ?> </p>
-      <?php endif; ?>
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            swal("Error", "<?php echo addslashes($error); ?>", "error");
+          });
+        </script>
+      <?php endif; ?> 
       <form method="POST" action="/register">
         <div class="input-group">
           <label for="fullname">Nama Lengkap</label>
