@@ -44,6 +44,11 @@ body {
   background-color: #2e7d32;
 }
 
+.menu li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
 /* Main Content */
 .main-content {
   flex: 1;
@@ -127,6 +132,17 @@ table th,
 table td {
   padding: 12px;
   text-align: left;
+  vertical-align: middle;
+}
+
+table td.text-center {
+  text-align: center;
+  padding-left: 0;
+}
+
+table td:last-child,
+table th:last-child {
+  text-align: center;
 }
 
 table th {
@@ -152,4 +168,38 @@ table tr:nth-child(even) {
 .status.selesai {
   background-color: #ffcdd2;
   color: #b71c1c;
+}
+
+/* aksi */
+.aksi {
+  display: flex;
+  justify-content: center;   /* ini bikin center */
+  align-items: center;
+  gap: 8px;
+}
+
+.aksi a {
+  text-decoration: none;
+  font-size: 13px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  color: white;
+  transition: 0.3s;
+}
+
+/* Tombol */
+.btn-detail {
+  background-color: #1976d2;
+}
+
+.btn-edit {
+  background-color: #f9a825;
+}
+
+.btn-hapus {
+  background-color: #d32f2f;
+}
+
+.aksi a:hover {
+  opacity: 0.85;
 }
