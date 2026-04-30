@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>iSosial - Kegiatan Sosial</title>
 
-<link rel="stylesheet" href="css/homepage.css">
+<link rel="stylesheet" href="/css/homepage.css">
 
 </head>
 
@@ -17,7 +17,7 @@
         <h2 class="logo">iSosial</h2>
 
         <div class="menu">
-            <a href="#">Home</a>
+            <a href="/">Home</a>
             <a href="#">Kegiatan</a>
             <a href="#">Relawan</a>
             <a href="/aboutme">Tentang</a>
@@ -42,7 +42,7 @@
 <!-- CARD 1 -->
 <div class="card">
 <div class="card-image">
-<img src="assets/icon/Panti-Isosial.jpeg">
+<img src="/assets/icon/Panti-Isosial.jpeg">
 <div class="badge">Regular</div>
 <div class="deadline">Batas Registrasi 8 hari lagi</div>
 </div>
@@ -59,7 +59,7 @@
 <!-- CARD 2 -->
 <div class="card">
 <div class="card-image">
-<img src="assets/icon/Relawan-Isosial.jpeg">
+<img src="/assets/icon/Relawan-Isosial.jpeg">
 <div class="badge">Project</div>
 <div class="deadline">Batas Registrasi 8 hari lagi</div>
 </div>
@@ -76,7 +76,7 @@
 <!-- CARD 3 -->
 <div class="card">
 <div class="card-image">
-<img src="assets/icon/Relawanijo-iSosial.jpeg">
+<img src="/assets/icon/Relawanijo-iSosial.jpeg">
 <div class="badge">Project</div>
 <div class="deadline">Batas Registrasi 30 hari lagi</div>
 </div>
@@ -93,7 +93,7 @@
 <!-- CARD 4 -->
 <div class="card">
 <div class="card-image">
-<img src="assets/icon/Panti-Isosial.jpeg">
+<img src="/assets/icon/Panti-Isosial.jpeg">
 <div class="badge">Regular</div>
 <div class="deadline">Batas Registrasi hari ini</div>
 </div>
@@ -110,7 +110,7 @@
 <!-- CARD 5 -->
 <div class="card">
 <div class="card-image">
-<img src="assets/icon/Relawanijo-iSosial.jpeg">
+<img src="/assets/icon/Relawanijo-iSosial.jpeg">
 <div class="badge">Project</div>
 <div class="deadline">Batas Registrasi hari ini</div>
 </div>
@@ -127,7 +127,7 @@
 <!-- CARD 6 -->
 <div class="card">
 <div class="card-image">
-<img src="assets/icon/Relawan-Isosial.jpeg">
+<img src="/assets/icon/Relawan-Isosial.jpeg">
 <div class="badge">Project</div>
 <div class="deadline">Batas Registrasi 2 hari lagi</div>
 </div>
@@ -145,6 +145,7 @@
 
 <div class="pagination">
 <a href="/">1</a>
+<a href="/homepage2">2</a>
 </div>
 
 </div>

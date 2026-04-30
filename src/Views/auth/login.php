@@ -7,6 +7,14 @@
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body class="auth-bg">
+  <?php
+    if (session_status() === PHP_SESSION_NONE) {
+      session_start();
+    }
+
+    $flashMessage = $_SESSION['flash_message'] ?? null;
+    unset($_SESSION['flash_message']);
+  ?>
 
   <div class="auth-container">
     <div class="auth-left">
@@ -27,6 +35,14 @@
         <script>
           document.addEventListener('DOMContentLoaded', function() {
             swal("Error", "<?php echo addslashes($error); ?>", "error");
+          });
+        </script>
+      <?php endif; ?>
+
+      <?php if (!empty($flashMessage)): ?>
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            swal("Berhasil", "<?php echo addslashes($flashMessage); ?>", "success");
           });
         </script>
       <?php endif; ?>
