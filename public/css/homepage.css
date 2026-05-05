@@ -209,6 +209,88 @@ body{
 .login-btn:hover{
     background:#f0f0f0;
 }
+/* FOOTER FULL */
+.footer{
+    width:100%;
+    background: linear-gradient(135deg, #1b5e20, #2e7d32);
+    color:white;
+}
+
+/* ISI FOOTER */
+.footer-container{
+    max-width:1200px;
+    margin:auto;
+    padding:50px 60px;
+
+    display:flex;
+    justify-content:space-between;
+    gap:50px;
+    flex-wrap:wrap;
+}
+
+/* KIRI */
+.footer-left{
+    max-width:600px;
+}
+
+.footer-left h2{
+    margin:0;
+    font-size:28px;
+}
+
+.footer-left span{
+    font-size:18px;
+    font-weight:normal;
+}
+
+.footer-left p{
+    font-size:14px;
+    margin:10px 0;
+    line-height:1.6;
+}
+
+.tagline{
+    font-style:italic;
+    margin-top:10px;
+}
+
+/* CONTACT */
+.contact h4{
+    margin-top:20px;
+    margin-bottom:5px;
+}
+
+/* SOCIAL ICON */
+.social{
+    margin-top:15px;
+    display:flex;
+    gap:15px;
+}
+
+.social img{
+    width:22px;
+    height:22px;
+    cursor:pointer;
+    transition:0.2s;
+}
+
+.social img:hover{
+    transform:scale(1.2);
+}
+
+/* KANAN */
+.footer-right h3{
+    margin-bottom:10px;
+}
+
+.footer-right ul{
+    padding-left:20px;
+}
+
+.footer-right li{
+    margin-bottom:8px;
+    font-size:14px;
+}
 
 /* Tablet */
 @media (max-width:1024px){
