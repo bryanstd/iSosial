@@ -34,7 +34,7 @@ abstract class BaseController extends Controller
     protected function requireAdmin()
     {
         if (!$this->isAdmin()) {
-            $this->render('/errors/403', ['message' => 'Access denied. Admin only.']);
+            $this->render('/errors/403', ['message' => 'Hanya admin yang dapat mengakses halaman ini.']);
             exit();
         }
     }

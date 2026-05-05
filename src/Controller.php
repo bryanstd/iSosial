@@ -7,8 +7,8 @@ class Controller
     protected function render($view, $data = [])
     {
         extract($data);
-
-        include "Views/$view.php";
+        $view = ltrim(str_replace('..', '', (string) $view), '/');
+        include __DIR__ . "/Views/{$view}.php";
     }
 
     public function redirect($path)
