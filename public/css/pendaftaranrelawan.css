@@ -1,0 +1,217 @@
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f4f4;
+}
+
+/* NAVBAR */
+.navbar{
+    background:#2e7d32;
+    padding:15px 50px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    color:white;
+}
+
+.logo h2{
+    margin:0;
+}
+
+.logo span{
+    font-size:18px;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+/* CONTENT */
+.detail-container{
+    display:flex;
+    gap:40px;
+
+    padding:35px 50px;
+    align-items:flex-start;
+}
+
+/* LEFT */
+.left-content{
+    flex:2;
+}
+
+.banner{
+    width:100%;
+    border-radius:15px;
+    height:420px;
+    object-fit:cover;
+}
+
+/* ORGANISASI */
+.organisasi-box{
+    margin-top:20px;
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo-organisasi{
+    width:60px;
+    height:80px;
+    object-fit:cover;
+}
+
+.bersama{
+    margin:0;
+    color:#777;
+    font-size:14px;
+}
+
+.organisasi-box h4{
+    margin:5px 0 0 0;
+    color:#d32f2f;
+}
+
+/* RIGHT */
+.right-content{
+    flex:1;
+
+    background:white;
+    border-radius:15px;
+
+    padding:25px;
+
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* kategori */
+.kategori{
+    background:#f5f2d0;
+    color:#8a7a00;
+
+    padding:6px 10px;
+    border-radius:5px;
+    font-size:13px;
+}
+
+.right-content h1{
+    font-size:35px;
+    margin:20px 0;
+}
+
+/* INFO BOX */
+.info-box{
+    border:1px solid #ddd;
+    border-radius:15px;
+    overflow:hidden;
+}
+
+.info-item{
+    padding:18px;
+    border-bottom:1px solid #eee;
+}
+
+.label{
+    margin:0;
+    color:#777;
+    font-size:14px;
+}
+
+.info-item p:last-child{
+    margin-top:5px;
+    font-weight:500;
+}
+
+.batas{
+    background:#eee;
+    padding:15px;
+    font-size:14px;
+}
+
+/* BUTTON */
+.btn-daftar{
+    width:100%;
+    margin-top:20px;
+
+    background:#d32f2f;
+    color:white;
+
+    border:none;
+    padding:15px;
+
+    border-radius:10px;
+
+    font-size:16px;
+    cursor:pointer;
+
+    transition:0.2s;
+}
+
+.btn-daftar:hover{
+    background:#b71c1c;
+}
+
+/* FOOTER */
+.footer{
+    background: #234826;
+    color:white;
+}
+
+.footer-container{
+    max-width:1200px;
+    margin:auto;
+
+    padding:50px;
+
+    display:flex;
+    justify-content:space-between;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.footer-left{
+    max-width:600px;
+}
+
+.footer-left h2{
+    margin:0;
+}
+
+.footer-left span{
+    font-size:18px;
+}
+
+.footer-left p{
+    line-height:1.7;
+    font-size:14px;
+}
+
+.tagline{
+    font-style:italic;
+}
+
+.footer-right ul{
+    padding-left:20px;
+}
+
+/* RESPONSIVE */
+@media (max-width:900px){
+
+.detail-container{
+    flex-direction:column;
+}
+
+.right-content{
+    width:100%;
+}
+
+.banner{
+    height:250px;
+}
+
+}
