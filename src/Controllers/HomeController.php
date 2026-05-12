@@ -18,6 +18,6 @@ class HomeController extends Controller
 
     public function aboutme()
     {
-        $this->render('aboutme');
+        $this->render('about');
     }
 }

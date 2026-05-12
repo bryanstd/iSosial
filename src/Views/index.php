@@ -17,10 +17,10 @@
         <h2 class="logo">iSosial</h2>
 
         <div class="menu">
-            <a href="homepage.html">Home</a>
+            <a href="#">Home</a>
             <a href="#">Kegiatan</a>
             <a href="#">Relawan</a>
-            <a href="aboutme.html">Tentang</a>
+            <a href="/about">Tentang</a>
         </div>
     </div>
 
