@@ -27,9 +27,6 @@ $isAdmin = ($user['role'] ?? '') === 'admin';
     <li class="<?= $active === 'profile' ? 'active' : '' ?>">
       <a href="/dashboard/profile">Profil</a>
     </li>
-    <li class="<?= $active === 'settings' ? 'active' : '' ?>">
-      <a href="/dashboard/settings">Pengaturan</a>
-    </li>
     <li class="menu-logout">
       <a href="/logout">Logout</a>
     </li>

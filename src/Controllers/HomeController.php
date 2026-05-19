@@ -20,4 +20,8 @@ class HomeController extends Controller
     {
         $this->render('about');
     }
+    public function daftar_relawan()
+    {
+        $this->render('daftarrelawan');
+    }
 }

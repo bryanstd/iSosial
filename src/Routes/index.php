@@ -8,7 +8,7 @@ use App\Router;
 $router = new Router();
 
 $router->get('/', HomeController::class, 'index');
-$router->get('/homepage2', HomeController::class, 'indexPage2');
+$router->get('/daftar-relawan', HomeController::class, 'daftar_relawan');
 $router->get('/about', HomeController::class, 'aboutme');
 
 $router->get('/login', AuthController::class, 'showLoginPage');

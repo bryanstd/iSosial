@@ -18,14 +18,12 @@
 
         <div class="menu">
             <a href="#">Home</a>
-            <a href="#">Kegiatan</a>
-            <a href="#">Relawan</a>
             <a href="/about">Tentang</a>
         </div>
     </div>
 
     <div class="nav-right">
-        <a href="login.html" class="login-btn">Login</a>
+        <a href="/login" class="login-btn">Login</a>
 
     </div>
 
@@ -33,13 +31,14 @@
 
 <div class="container">
 
-<h2>Cari Aktivitas, <span>10 aktivitas membutuhkan bantuanmu</span></h2>
+<h2>Cari Aktivitas, 12 aktivitas membutuhkan bantuanmu</h2>
 
 <input type="text" placeholder="Cari aktivitas..." class="search">
 
 <div class="grid">
 
 <!-- CARD 1 -->
+<a href="/daftar-relawan" class="card-link">
 <div class="card">
 <div class="card-image">
 <img src="../../assets/icon/Panti-Isosial.jpeg">
@@ -55,6 +54,7 @@
 <p class="lokasi">📍 Kota Pontianak</p>
 </div>
 </div>
+</a>
 
 <!-- CARD 2 -->
 <div class="card">
@@ -242,9 +242,6 @@
 </div>
 </div>
 </div>
-<div class="container">
-    <!-- isi homepage kamu (grid, dll) -->
-</div>
 
 <!-- FOOTER -->
 <footer class="footer">
@@ -263,17 +260,8 @@
                 </p>
                 <p>+62 898 8890 298</p>
             </div>
-
-            <!-- ICON -->
-            <div class="social">
-                <img src="../../assets/icon/facebook.png">
-                <img src="../../assets/icon/whatsapp.png">
-                <img src="../../assets/icon/tiktok.png">
-                <img src="../../assets/icon/x.png">
-            </div>
         </div>
 
-        <!-- KANAN -->
         <div class="footer-right">
             <h3>Kelompok 9</h3>
             <ul>
