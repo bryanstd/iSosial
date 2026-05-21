@@ -21,11 +21,11 @@ Kondisi ini menyulitkan pihak sekolah dalam melakukan **monitoring**, **evaluasi
 ## 🎯 Tujuan Aplikasi
 
 Aplikasi **iSosial** dikembangkan untuk:
-1. **Mendukung Operasional Kegiatan Sosial**  
-2. **Memberikan Edukasi dan Pembinaan**  
-3. **Penggalangan Dana dan Sumber Daya**  
-4. **Memberikan Dukungan Emosional dan Sosial**  
-5. **Membangun Relasi dan Jejaring Sosial**
+1. Mendukung operasional kegiatan sosial  
+2. Memberikan edukasi dan pembinaan  
+3. Memfasilitasi penggalangan dana dan sumber daya  
+4. Memberikan dukungan emosional dan sosial  
+5. Membangun relasi dan jejaring sosial  
 
 ---
 
@@ -44,12 +44,12 @@ Aplikasi **iSosial** dikembangkan untuk:
 
 Sebagai solusi atas permasalahan pengelolaan kegiatan sosial di sekolah, **iSosial** hadir dengan fitur-fitur utama berikut:
 
-- **Pencarian Aktivitas** — Menampilkan daftar kegiatan sosial yang sedang membutuhkan relawan.  
-- **Informasi Kegiatan** — Menyediakan detail kegiatan seperti tanggal, lokasi, dan organisasi penyelenggara.  
-- **Pendaftaran Relawan** — Memungkinkan siswa mendaftar secara online untuk berpartisipasi.  
-- **Manajemen Kegiatan** — Admin dapat menambah, mengedit, dan menghapus kegiatan sosial.  
-- **Riwayat Kegiatan** — Menyimpan data keterlibatan siswa dalam kegiatan sosial sebelumnya.  
-- **Statistik & Pelaporan** — Menampilkan data partisipasi untuk evaluasi dan perencanaan kegiatan berikutnya.
+- Pencarian aktivitas sosial  
+- Informasi detail kegiatan (tanggal, lokasi, penyelenggara)  
+- Pendaftaran relawan secara daring  
+- Manajemen kegiatan oleh admin (CRUD)  
+- Riwayat keterlibatan siswa  
+- Statistik dan pelaporan partisipasi  
 
 ---
 
@@ -67,13 +67,13 @@ Sebagai solusi atas permasalahan pengelolaan kegiatan sosial di sekolah, **iSosi
 
 ## 🧩 Struktur Halaman
 
-1. **Home Page** — Menampilkan daftar kegiatan sosial yang membutuhkan relawan.  
-2. **Tentang Page** — Menjelaskan visi, misi, dan fitur utama aplikasi.  
-3. **Login Page** — Akses ke dashboard untuk admin dan pengguna terdaftar.  
-4. **Dashboard Admin** — Menampilkan statistik kegiatan, relawan, dan riwayat siswa.  
-5. **Manajemen Kegiatan** — CRUD data kegiatan sosial.  
-6. **Pendaftaran Relawan** — Formulir pendaftaran relawan.  
-7. **Riwayat Kegiatan** — Daftar kegiatan yang telah selesai.
+1. Home Page — daftar kegiatan sosial  
+2. Tentang Page — visi, misi, dan fitur aplikasi  
+3. Login Page — akses dashboard admin dan pengguna  
+4. Dashboard Admin — statistik kegiatan dan relawan  
+5. Manajemen Kegiatan — CRUD data kegiatan sosial  
+6. Pendaftaran Relawan — formulir pendaftaran online  
+7. Riwayat Kegiatan — daftar kegiatan yang telah selesai  
 
 ---
 
@@ -97,12 +97,3 @@ Jl. Letnan Jendral Sutoyo, Parit Tokaya, Kec. Pontianak Sel., Kota Pontianak, Ka
 ## 🌟 Motto
 
 > *Ubah niat baik jadi aksi baik hari ini.*
-
----
-
-## 🔗 Tautan Terkait
-- **[Tentang iSosial](ca://s?q=Tampilkan_halaman_Tentang_iSosial)**  
-- **[Fitur Utama iSosial](ca://s?q=Jelaskan_fitur_utama_iSosial)**  
-- **[Dashboard Admin](ca://s?q=Tampilkan_dashboard_admin_iSosial)**  
-- **[Riwayat Kegiatan](ca://s?q=Tampilkan_riwayat_kegiatan_iSosial)**  
-- **[Pendaftaran Relawan](ca://s?q=Tampilkan_form_pendaftaran_relawan)**  
